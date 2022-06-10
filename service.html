@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Services</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="/assets/logo3.png" alt="" width="30" height="30" class="d-inline-block align-text-top">  Animal Hospital
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+               <li class="navbar-item">
+                    <a href="index.html" class="nav-link">Home</a>
+               </li> 
+               <li class="nav-item active">
+                   <a href="service.html" class="nav-link active" aria-current="page">Services</a>
+               </li>
+               <li class="nav-item">
+                    <a href="staff.html" class="nav-link">Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="services" class="bg-light mt-5">
+        <div class="bg-light py-2 py-sm-5">
+            <div class="container">
+                <h3 class="mb-sm-4 display-5">Our services</h3>
+                <!-- Open offcanvas -->
+                <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                    Expore more services
+                </a>
+                <!-- Services -->
+                <div class="row mb-4 mt-5 align-items-center">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <img src="/assets/ppp1.jpeg" alt="" style="width:25rem;height:15rem;">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h5>Grooming</h5>
+                        <p>Grooming is not only about appearance, but for good physical health too! Certain breeds should be groomed by a groomer every 6-8 weeks depending on the breed. A pet left with severe matting may have unseen hotspots, growth, ticks and other unwelcome critters under the thick pelted surface.
+                            We can advise you on the best haircut for your lifestyle and show you how to care for his/her coat between grooming to ensure that bad hair days are a thing of the past.
+                            A complete groom includes: a shampoo, massage, fluff drying, the cut of your choice, ear cleaning, trimming of hair in the paw pads, nail clipping, expressing of your dog’s anal glands upon request, and a complimentary bow or bandana for a final touch.
+                        </p>
+                        <p>Cost: $200</p>
+                        <a href="appointment.html" class="btn btn-primary">Book </a>
+                    </div>
+                </div>
+                <hr class="my-4">
+
+                <div class="row mb-4 mt-5 align-items-center">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <img src="/assets/ppp2.jpg" alt="" style="width:25rem;height:15rem;">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h5>Diagnostic</h5>
+                        <p>We believe all pets need regular examinations. It is really important for pet’s overall health because it allows veterinarians to do a thorough check-up and evaluate their general condition.
+                            An important part of the examination is the time spent talking with our staff. Here at Wellesley Animal Hospital, our staff is here for you if you have any questions or concerns about things going on with your pets. We are here to discuss anything from diet to training, and much more. You might talk about something without realizing that it could be symptomatic. We might hear you say something that tells us to look closer or to run more tests to investigate the problem.
+                        </p>
+                        <p>Cost: $200</p>
+                        <a href="appointment.html" class="btn btn-primary">Book </a>
+                    </div>
+                </div>
+                <hr class="my-4">
+
+                <div class="row mb-4 mt-5 align-items-center">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <img src="/assets/ppp3.jpg" alt="" style="width:25rem;height:15rem;">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h5>Surgery</h5>
+                        <p>Here at XXXXXX Animal Hospital, we are proud to offer our surgical services to Toronto, ON and the surrounding communities.
+                            Our surgical team is dedicated to the care of their patients. It is our goal to make sure we are keeping up with the latest surgical developments so we can offer them to your pets. They are dedicated to finding better ways to treat your pets. With less anesthesia and surgical time, patients heal faster so they are able to return to their normal lives more quickly. Keeping up to date with the latest advances is important because it leads to less stress for your pets.
+                        </p>
+                        <p>Cost: $600</p>
+                        <a href="appointment.html" class="btn btn-primary">Book </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">Services for different animals   </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <p>We provide services for various animals</p>
+            <!-- dropdown -->
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="animalDropDown" data-bs-toggle="dropdown">
+                    choose an animal
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="animalDropDown">
+                    <li>  <a href="#" class="dropdown-item">Dog</a></li>
+                    <li>  <a href="#" class="dropdown-item">Cat</a></li>
+                    <li>  <a href="#" class="dropdown-item">Reptile</a></li>
+                    <li>  <a href="#" class="dropdown-item">Small animals</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="small bg-light mt-5">
+        <div class="container py-3 py-sm-3">
+            <div class="row justify-content-center">
+                <h6 class="text-center">Animal hospital</h6>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6">
+                    <h6 >Phone:XXXXXXXXXX</h6>
+                </div>
+                <div class="col-12 col-sm-6 text-end">
+                    <h6>Address:XXXXXXXXXXXXXXXXXX</h6>
+                </div>
+            </div>
+        
+        </div>
+    </footer>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
